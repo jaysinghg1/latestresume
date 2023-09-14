@@ -1,0 +1,159 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+.container {
+    height: auto;
+    width: 100%;
+    display: flex;
+    background-color:pink;
+    flex-shrink: inherit;
+    flex-grow: inherit;
+}
+
+.header {
+    height: 60px;
+    width: 100%;
+    background-color:green;
+    color: red;
+    text-align: center;
+    line-height: 60px;
+    font-weight: bold;
+    font-family: Verdana;
+    letter-spacing: 5px;
+}
+
+.sidebar {
+    height: auto;
+    width: 300px;
+    background-color:darkcyan;
+}
+
+.sidebar img {
+    height: auto;
+    width:135px;
+    border: 5px solid orange;
+    border-radius: 50%;
+}
+
+.sidebar ul {
+    list-style: none;
+}
+
+.sidebar ul li {
+    color: white;
+    text-align: center;
+    padding: 8px;
+}
+
+.sidebar ul li a {
+    text-decoration: none;
+    color:yellow;
+    font-weight: bold;
+    border: 4px solid black;
+    letter-spacing: 2px;
+    display: block;
+    padding: 5px;
+}
+table{
+    font-size: 20px;
+}
+footer {
+    height: 50px;
+    width: 100%;
+    background-color: black;
+    font-size: 25px;
+    color: red;
+    line-height: 50px;
+    letter-spacing: 5px;
+    text-align: center;
+}
+
+#spanfix {
+    animation-name: blinker;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    color: red;
+}
+
+@keyframes blinker {
+    from {
+        opacity: 1.0;
+    }
+
+    to {
+        opacity: 0;
+    }
+}
+
+@media (max-width:768px) {
+    * {
+        margin: 0%;
+        padding: 0%;
+    }
+html,body{
+    overflow-x: hidden;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+.header {
+    height: 40px;
+    width:auto;
+    background-color:yellow;
+    color: red;
+    text-align: center;
+    line-height: 40px;
+    font-weight: bold;
+    font-family: Verdana;
+    letter-spacing: 5px;
+}
+.container {
+    height: auto;
+    width:auto;
+    display: flex;
+    background-color:cadetblue;
+    flex-grow:inherit;
+    flex-shrink: inherit;
+}
+.sidebar {
+    height: auto;
+    width: 180px;
+    background-color:purple;
+}
+    .sidebar img {
+        height: auto;
+        width: 100px;
+        border: 4px solid red;
+        border-radius: 50%;
+
+    }
+
+    .sidebar ul li {
+        color: azure;
+        text-align: center;
+        padding: 8px;
+    }
+
+    .sidebar ul li a {
+        text-decoration: none;
+        color:chartreuse;
+        font-weight: bold;
+        border: 3px solid black;
+    }
+table{
+    font-size: 14px;
+}
+footer {
+    height: 30px;
+    width:auto;
+    background-color:rgb(58, 55, 55);
+    font-size: 20px;
+    color:white;
+    line-height: 30px;
+    letter-spacing: 5px;
+    text-align: center;
+}
+}
